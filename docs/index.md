@@ -2,7 +2,7 @@
 This documination is unfinished yet.
 
 # Introduction
-"Deltatime"(aka DtbX) is a TurboWarp extension which provides soft, precision Delta timing blocks.
+**Deltatime**(aka DtbX) is a TurboWarp extension which provides soft, precision Delta timing blocks.
 
 # Important notice
 - Note that FPS and ΔT are in directly-impactable relationship, so even mentioning only "FPS" or "ΔT" mostly means both of them.
