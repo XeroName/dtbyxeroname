@@ -9,6 +9,7 @@ This documenation is unfinished yet.
 
 ## Introduction
 - **Deltatime**(aka dtbx) is a [TurboWarp](https://turbowarp.org/) extension which provides soft, precision Delta timing blocks.
+- v2.2.x
 
 ## Basic knoledgement
 - Note that FPS and ΔT are in directly-impactable relationship, so even mentioning only "FPS" or "ΔT" normally means both of them.
@@ -38,6 +39,7 @@ Not added yet.
 
 ## 소개
 - **Deltatime**(일명 dtbx)은 부드럽고 보다 정확한 델타 시간계 값을 제공하는 [TurboWarp](https://turbowarp.org/)의 확장 기능입니다.
+- v2.2.x 기준
 
 ## 개념 설명
 - **FPS**는 특정 환경에서 화면이 초당 새로고침되는 횟수(일명 주사율)를 숫자로 나타낸 값입니다. 예시로 60 FPS는 **화면이 1초에 60번 바뀌는 것**을 의미합니다.
@@ -53,3 +55,10 @@ dtbx의 FPS와 ΔT 값은 다음과 같은 속성을 가집니다.
 ## 필터링
 - **Filtering** 탭에 있는 블록들은 FPS를 안정화하는 데 사용됩니다.
 - `Filter Strength`(일명 필터 강도)는 FPS의 안정성 및 성능을 직접적으로 결정하는 값입니다.
+- 필터 강도가 증가하면 `FPS` 및 `ΔT` 값에 다음과 같은 변화가 일어나게 됩니다.
+  - 해당 값들이 비교적 덜 요동치게 됩니다.
+  - 주사율의 실제 값이 반영되기까지 더 많은 시간이 걸리게 됩니다. 따라서 필터 강도가 증가함에 따라 FPS 값의 작은 변동이 무시될 수 있습니다.
+ 
+## 안정성 평가자
+`Stability Evaluator`는 실제 상황에서 FPS가 얼마나 안정적인지에 대한 평가를 실시합니다.
+아직 추가되지 않았습니다.
