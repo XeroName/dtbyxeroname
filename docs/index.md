@@ -23,14 +23,22 @@ This documenation is unfinished yet.
 
 ## Filtering
 - **Filtering** blocks are purposed to stablize FPS.   
-- `Filter Strength`(aka strength) is a value that directly determines the performance and stability of FPS.
-
+- `Filter Strength`(aka strength) is a value that directly determines the performance and stability of FPS. Cannot be smaller than 1 and also bigger than 907.
 - When filter strength has been set to higher value :
   - FPS and ΔT will be less fluctuate.
   - Updating time of FPS and ΔT will be increase. That means small variation of FPS may be ignored as strength arises.
 
 ## Stability Evaluator
-Stability Evaluator provides value of "How much stable FPS is" in actual working.
+Stability Evaluator provides value of "How much stable or How fast FPS is" in actual working.
+Not added yet.
+
+## Autopilot
+- Autopilot is a function that automatically adjusts the `Filter Strength`, refering `Stability Evaluator` to achieve user's target purpose.
+- Autopilot has following modes : "Fast Updating", "Stability Focusing", "Fast & Stabilizing".
+  - When Autopilot has been set to "Fast updating" mode, it focuses at only rapid renewing of FPS until shorten by target time.
+  - When Autopilot has been set to "Stability Focusing" mode, it focuses at only stabilization of FPS until achieve target value.
+  - When Autopilot has been set to "Fast & Stabilizing" mode, it detects the fluctuation of FPS and adjusts the strength flexible.
+ 
 Not added yet.
 
 ---
@@ -54,7 +62,7 @@ Not added yet.
 
 ## 필터링
 - **Filtering** 탭에 있는 블록들은 FPS를 안정화하는 데 사용됩니다.
-- `Filter Strength`(일명 필터 강도)는 FPS의 안정성 및 성능을 직접적으로 결정하는 값입니다.
+- `Filter Strength`(일명 필터 강도)는 FPS의 안정성 및 성능을 직접적으로 결정하는 값입니다. 1보다 작거나 907보다 클 수 없습니다.
 - 필터 강도가 증가하면 `FPS` 및 `ΔT` 값에 다음과 같은 변화가 일어나게 됩니다.
   - 해당 값들이 비교적 덜 요동치게 됩니다.
   - 주사율의 실제 값이 반영되기까지 더 많은 시간이 걸리게 됩니다. 따라서 필터 강도가 증가함에 따라 실제 주사율 값의 작은 변동이 무시될 수 있습니다.
