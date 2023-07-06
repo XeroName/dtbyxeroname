@@ -16,7 +16,7 @@ This documenation is unfinished yet.
 - ΔT means the "Delta Time".
 
 ## FPS & ΔT
-FPS and ΔT value of dtbx has following properties :
+`FPS` and `ΔT` value of **dtbx** has following properties :
 - `FPS` block returns roundary integer value of **current Framerate** using `Math.round()` of JS.
 - When Framerate goes down to < 0.5, `FPS` block starts to return real number of **current Framerate** by 2 decimal places using `.toFixed(2)`.
 - If the `FPS` value is not grater than 0, `ΔT` value will be also set to 0 until `FPS` grater than 0.
@@ -47,7 +47,7 @@ Not added yet.
 - FPS와 ΔT는 상호 간의 직접적인 영향을 받는 값입니다. 따라서 해당 문서에서 "FPS" 나 "ΔT" 중 한 가지만 언급하였더라도 보통은 두 가지 모두를 의미하는 것으로 간주할 수 있습니다.
 
 ## FPS 및 ΔT
-dtbx의 FPS와 ΔT 값은 다음과 같은 속성을 가집니다.
+**dtbx**의 `FPS`와 `ΔT` 값은 다음과 같은 속성을 가집니다.
 - `FPS` 블럭은 JS의 `Math.round()` 함수를 사용하여 **현재 주사율**을 정수로 반올림한 값을 반환합니다.
 - 주사율이 0.5 미만으로 떨어질 경우, `FPS` 블럭은 JS의 `.toFixed(2)` 함수를 사용하여 **현재 주사율**의 소수 이하 2번째 자릿수 까지의 실수 값을 반환하기 시작합니다.
 - 만약 `FPS` 값이 0보다 크지 않을 경우, `FPS` 값이 0보다 커질 때까지 `ΔT` 값 또한 0으로 설정됩니다.
@@ -57,7 +57,7 @@ dtbx의 FPS와 ΔT 값은 다음과 같은 속성을 가집니다.
 - `Filter Strength`(일명 필터 강도)는 FPS의 안정성 및 성능을 직접적으로 결정하는 값입니다.
 - 필터 강도가 증가하면 `FPS` 및 `ΔT` 값에 다음과 같은 변화가 일어나게 됩니다.
   - 해당 값들이 비교적 덜 요동치게 됩니다.
-  - 주사율의 실제 값이 반영되기까지 더 많은 시간이 걸리게 됩니다. 따라서 필터 강도가 증가함에 따라 FPS 값의 작은 변동이 무시될 수 있습니다.
+  - 주사율의 실제 값이 반영되기까지 더 많은 시간이 걸리게 됩니다. 따라서 필터 강도가 증가함에 따라 실제 주사율 값의 작은 변동이 무시될 수 있습니다.
  
 ## 안정성 평가자
 `Stability Evaluator`는 실제 상황에서 FPS가 얼마나 안정적인지에 대한 평가를 실시합니다.
