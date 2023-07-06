@@ -1,29 +1,55 @@
 # Documenation of Deltatime
-This documenation is unfinished yet.
+This documenation is unfinished yet.   
+- Supports en-US Guide.
+- 한국어 도움말을 지원합니다.
 
 ---
 
-## Introduction
-**Deltatime**(aka DtbX) is a TurboWarp extension which provides soft, precision Delta timing blocks.
+# [en-US] English Guide
 
-## Important notice
-- Note that FPS and ΔT are in directly-impactable relationship, so even mentioning only "FPS" or "ΔT" mostly means both of them.
+## Introduction
+- **Deltatime**(aka dtbx) is a [TurboWarp](https://turbowarp.org/) extension which provides soft, precision Delta timing blocks.
+
+## Basic knoledgement
+- Note that FPS and ΔT are in directly-impactable relationship, so even mentioning only "FPS" or "ΔT" normally means both of them.
 - ΔT means the "Delta Time".
 
 ## FPS & ΔT
-FPS and ΔT value of DtbX has following properties :
-- **FPS** block returns roundary integer value of current Framerate using `Math.round()`.
-- When Framerate goes down to < 0.5, **FPS** block starts to return real number by 2 decimal places using `.toFixed(2)`.
-- If the **FPS** value is not grater than 0, **ΔT** value will be also set to 0 until FPS grater than 0.
+FPS and ΔT value of dtbx has following properties :
+- `FPS` block returns roundary integer value of **current Framerate** using `Math.round()` of JS.
+- When Framerate goes down to < 0.5, `FPS` block starts to return real number of **current Framerate** by 2 decimal places using `.toFixed(2)`.
+- If the `FPS` value is not grater than 0, `ΔT` value will be also set to 0 until `FPS` grater than 0.
 
 ## Filtering
-**Filtering** blocks are purposed to stablize FPS.   
-**Filter Strength**(aka strength) is a value that directly determines the performance of ΔT.
+- **Filtering** blocks are purposed to stablize FPS.   
+- `Filter Strength`(aka strength) is a value that directly determines the performance and stability of FPS.
 
-When filter strength has been set to higher value :
-- FPS and ΔT will be less fluctuate.
-- Updating time of FPS and ΔT will be increase. That means small variation of FPS may be ignored as strength arises.
+- When filter strength has been set to higher value :
+  - FPS and ΔT will be less fluctuate.
+  - Updating time of FPS and ΔT will be increase. That means small variation of FPS may be ignored as strength arises.
 
 ## Stability Evaluator
 Stability Evaluator provides value of "How much stable FPS is" in actual working.
 Not added yet.
+
+---
+
+# [ko-KR] 한국어 도움말
+
+## 소개
+- **Deltatime**(일명 dtbx)은 부드럽고 보다 정확한 델타 시간계 값을 제공하는 [TurboWarp](https://turbowarp.org/)의 확장 기능입니다.
+
+## 개념 설명
+- **FPS**는 특정 환경에서 화면이 초당 새로고침되는 횟수(일명 주사율)를 숫자로 나타낸 값입니다. 예시로 60 FPS는 **화면이 1초에 60번 바뀌는 것**을 의미합니다.
+- **ΔT**는 "델타 타임" 또는 "델타 시간계"를 의미합니다. 1을 FPS 값으로 나누어 얻을 수 있는 값입니다.
+- FPS와 ΔT는 상호 간의 직접적인 영향을 받는 값입니다. 따라서 해당 문서에서 "FPS" 나 "ΔT" 중 한 가지만 언급하였더라도 보통은 두 가지 모두를 의미하는 것으로 간주할 수 있습니다.
+
+## FPS 및 ΔT
+dtbx의 FPS와 ΔT 값은 다음과 같은 속성을 가집니다.
+- `FPS` 블럭은 JS의 `Math.round()` 함수를 사용하여 **현재 주사율**을 정수로 반올림한 값을 반환합니다.
+- 주사율이 0.5 미만으로 떨어질 경우, `FPS` 블럭은 JS의 `.toFixed(2)` 함수를 사용하여 **현재 주사율**의 소수 이하 2번째 자릿수 까지의 실수 값을 반환하기 시작합니다.
+- 만약 `FPS` 값이 0보다 크지 않을 경우, `FPS` 값이 0보다 커질 때까지 `ΔT` 값 또한 0으로 설정됩니다.
+
+## 필터링
+- **Filtering** 탭에 있는 블록들은 FPS를 안정화하는 데 사용됩니다.
+- `Filter Strength`(일명 필터 강도)는 FPS의 안정성 및 성능을 직접적으로 결정하는 값입니다.
