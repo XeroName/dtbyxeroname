@@ -17,7 +17,7 @@ This documenation is unfinished yet.
 
 ## FPS & ΔT
 `FPS` and `ΔT` value of **dtbx** has following properties :
-- `FPS` block returns roundary integer value of **current Framerate** using `Math.round()` of JS.
+- `FPS` block returns roundary integer value of **current Framerate** using `Math.round()`.
 - When Framerate goes down to < 0.5, `FPS` block starts to return real number of **current Framerate** by 2 decimal places using `.toFixed(2)`.
 - If the `FPS` value is not grater than 0, `ΔT` value will be also set to 0 until `FPS` grater than 0.
 
@@ -49,7 +49,7 @@ Not added yet.
 ## FPS 및 ΔT
 **dtbx**의 `FPS`와 `ΔT` 값은 다음과 같은 속성을 가집니다.
 - `FPS` 블럭은 JS의 `Math.round()` 함수를 사용하여 **현재 주사율**을 정수로 반올림한 값을 반환합니다.
-- 주사율이 0.5 미만으로 떨어질 경우, `FPS` 블럭은 JS의 `.toFixed(2)` 함수를 사용하여 **현재 주사율**의 소수 이하 2번째 자릿수 까지의 실수 값을 반환하기 시작합니다.
+- 주사율이 0.5 미만으로 떨어질 경우, `FPS` 블럭은 **현재 주사율**의 소수 이하 2번째 자릿수 까지의 실수 값을 반환하기 시작합니다. 해당 상황에서는 JS의 `.toFixed(2)` 함수를 사용합니다.
 - 만약 `FPS` 값이 0보다 크지 않을 경우, `FPS` 값이 0보다 커질 때까지 `ΔT` 값 또한 0으로 설정됩니다.
 
 ## 필터링
