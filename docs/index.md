@@ -16,6 +16,10 @@ This documenation is unfinished yet.
 - ΔT means the "Delta Time".
 
 ## FPS & ΔT
+
+```scratch
+([0000000000100000] to number :: #17cde6)
+```
 `FPS` and `ΔT` value of **dtbx** has following properties :
 - `FPS` block returns roundary integer value of **current Framerate** using `Math.round()`.
 - When Framerate goes down to < 0.5, `FPS` block starts to return real number of **current Framerate** by 2 decimal places using `.toFixed(2)`.
@@ -29,7 +33,7 @@ This documenation is unfinished yet.
   - Updating time of FPS and ΔT will be increase. That means small variation of FPS may be ignored as strength arises.
 
 ## Stability Evaluator
-Stability Evaluator provides value of "How much stable or How fast FPS is" in actual working.
+Stability Evaluator provides value of "How much stable" or "How fast to update" FPS in actual working.
 Not added yet.
 
 ## Autopilot
