@@ -18,8 +18,9 @@ This documenation is unfinished yet.
 ## FPS & ΔT
 
 ```scratch
-([0000000000100000] to number :: #17cde6)
+(ΔT :: #333333)
 ```
+
 `FPS` and `ΔT` value of **dtbx** has following properties :
 - `FPS` block returns roundary integer value of **current Framerate** using `Math.round()`.
 - When Framerate goes down to < 0.5, `FPS` block starts to return real number of **current Framerate** by 2 decimal places using `.toFixed(2)`.
