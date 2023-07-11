@@ -32,7 +32,7 @@ This documenation is unfinished yet.
 - **Calculating** blocks can be used to simplize calculations using with ΔT.
 - `Set Calculator Standard to (NUM) FPS` block sets the standard FPS value that Calculator refers.
 - `Standard FPS of Calculator` block returns the standard FPS value of Calculator. Default set to 30.
-- `Calc(NUM)` block returns multiply value of require value to move/rotate at `Standard FPS of Calculator`, which equals to NUM*CalcStandardFPS.
+- `Calc(NUM)` block returns multiply value of require value to move or rotate at `Standard FPS of Calculator`, which equals to NUM*CalcStandardFPS.
 
 ## Stability Evaluator
 Stability Evaluator provides value of "How much stable" or "How fast to update" FPS in actual working.
