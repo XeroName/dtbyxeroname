@@ -16,7 +16,7 @@ This documenation is unfinished yet.
 - ΔT means the "Delta Time".
 
 ## FPS & ΔT
-`FPS` and `ΔT` value of **dtbx** has following properties :
+`FPS` and `ΔT` value of **dtbx** have following properties :
 - `FPS` block returns roundary integer value of **current Framerate** using `Math.round()`.
 - When Framerate goes down to < 0.5, `FPS` block starts to return real number of **current Framerate** by 2 decimal places using `.toFixed(2)`.
 - If the `FPS` value is not grater than 0, `ΔT` value will be also set to 0 until `FPS` grater than 0.
@@ -27,6 +27,12 @@ This documenation is unfinished yet.
 - When filter strength has been set to higher value :
   - FPS and ΔT will be less fluctuate.
   - Updating time of FPS and ΔT will be increase. That means small variation of FPS may be ignored as strength arises.
+ 
+## Calculating
+- **Calculating** blocks can be used to simplize calculations using with ΔT.
+- `Set Calculator Standard to (NUM) FPS` block sets the standard FPS value that Calculator refers.
+- `Standard FPS of Calculator` block returns the standard FPS value of Calculator. Default set to 30.
+- `Calc(NUM)` block returns multiply value of require value to move/rotate at `Standard FPS of Calculator`, which equals to NUM*CalcStandardFPS.
 
 ## Stability Evaluator
 Stability Evaluator provides value of "How much stable" or "How fast to update" FPS in actual working.
