@@ -1,5 +1,4 @@
 # Documenation of Deltatime
-This documenation is unfinished yet.   
 - Supports en-US Guide.
 - 한국어 도움말을 지원합니다.
 
@@ -72,6 +71,12 @@ Not added yet.
 - 필터 강도가 증가하면 `FPS` 및 `ΔT` 값에 다음과 같은 변화가 일어나게 됩니다.
   - 해당 값들이 비교적 덜 요동치게 됩니다.
   - 주사율의 실제 값이 반영되기까지 더 많은 시간이 걸리게 됩니다. 따라서 필터 강도가 증가함에 따라 실제 주사율 값의 작은 변동이 무시될 수 있습니다.
+ 
+## 계산기
+- **Calculating** 탭에 있는 블록들은 ΔT 블록과 함께 사용하여 계산을 간소화하는데 사용할 수 있습니다.
+- `Set Calculator Standard to (NUM) FPS` block sets the standard FPS value that Calculator refers.
+- `Standard FPS of Calculator` block returns the standard FPS value of Calculator. Default set to 30.
+- `Calc(NUM)` block returns multiply value of require value to move or rotate at `Standard FPS of Calculator`, which equals to NUM*CalcStandardFPS.
  
 ## 안정성 평가자
 `Stability Evaluator`는 실제 상황에서 FPS가 얼마나 안정적인지에 대한 평가를 실시합니다.
