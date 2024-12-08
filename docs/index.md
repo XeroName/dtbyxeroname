@@ -10,11 +10,11 @@
 - **Deltatime**(aka dtbx) is a [TurboWarp](https://turbowarp.org/) extension which provides soft, precision Delta timing blocks.
 - Guidance of v2.2.x
 
-## Basic knoledgement
+## Basic knowledge
 - Note that FPS and ΔT are in directly-impactable relationship, so even mentioning only "FPS" or "ΔT" normally means both of them.
 - ΔT means the "Delta Time".
 
-## FPS & ΔT
+## FPS & ΔT(Delta Time)
 `FPS` and `ΔT` value of **dtbx** have following properties :
 - `FPS` block returns roundary integer value of **current Framerate** using `Math.round()`.
 - When Framerate goes down to < 0.5, `FPS` block starts to return real number of **current Framerate** by 2 decimal places using `.toFixed(2)`.
