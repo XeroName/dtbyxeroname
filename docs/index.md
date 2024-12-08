@@ -8,7 +8,7 @@
 
 ## Introduction
 - **Deltatime**(aka dtbx) is a [TurboWarp](https://turbowarp.org/) extension which provides soft, precision Delta timing blocks.
-- Guidance of v2.2.x
+- Guideline of v2.2.x
 
 ## Basic knowledge
 - Note that FPS and ΔT are in directly-impactable relationship, so even mentioning only "FPS" or "ΔT" normally means both of them.
@@ -59,7 +59,7 @@ Not added yet.
 - **ΔT**는 "델타 타임" 또는 "델타 시간계"를 의미합니다. 1을 FPS 값으로 나누어 얻을 수 있는 값입니다.
 - FPS와 ΔT는 상호 간의 직접적인 영향을 받는 값입니다. 따라서 해당 문서에서 "FPS" 나 "ΔT" 중 한 가지만 언급하였더라도 보통은 두 가지 모두를 의미하는 것으로 간주할 수 있습니다.
 
-## FPS 및 ΔT
+## FPS 및 ΔT(델타 타임)
 **dtbx**의 `FPS`와 `ΔT` 값은 다음과 같은 속성을 가집니다.
 - `FPS` 블럭은 JS의 `Math.round()` 함수를 사용하여 **현재 주사율**을 정수로 반올림한 값을 반환합니다.
 - 주사율이 0.5 미만으로 떨어질 경우, `FPS` 블럭은 **현재 주사율**의 소수 이하 2번째 자릿수 까지의 실수 값을 반환하기 시작합니다. 해당 상황에서는 JS의 `.toFixed(2)` 함수를 사용합니다.
